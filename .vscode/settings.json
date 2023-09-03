@@ -1,0 +1,7 @@
+{
+    "typescript.tsdk": "./ui/node_modules/typescript/lib",
+    "eslint.workingDirectories": [
+        "./ui"
+    ],
+    "typescript.preferences.importModuleSpecifier": "project-relative"
+}
