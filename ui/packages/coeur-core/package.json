@@ -20,9 +20,8 @@
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.4",
     "eslint": "8.48.0",
-    "eslint-config-coeur": "workspace:*",
+    "@coeur/config": "workspace:*",
     "react": "18.2.0",
-    "tailwind-config": "workspace:*",
     "tsup": "5.10.1",
     "typescript": "5.2.2"
   },

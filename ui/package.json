@@ -12,7 +12,7 @@
   "devDependencies": {
     "@changesets/cli": "2.26.2",
     "eslint": "8.48.0",
-    "eslint-config-coeur": "workspace:0.0.0",
+    "@coeur/config": "workspace:*",
     "prettier": "3.0.3",
     "turbo": "1.10.13"
   },

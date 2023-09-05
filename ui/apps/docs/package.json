@@ -9,12 +9,12 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "@coeur/core": "workspace:0.0.0",
+    "@coeur/core": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@coeur/tsconfig": "workspace:0.0.0",
+    "@coeur/tsconfig": "workspace:*",
     "@storybook/addon-actions": "7.0.4",
     "@storybook/addon-docs": "7.0.4",
     "@storybook/addon-essentials": "7.0.4",
@@ -26,10 +26,9 @@
     "@storybook/react-vite": "7.4.0",
     "@vitejs/plugin-react": "4.0.4",
     "autoprefixer": "10.4.15",
-    "eslint-config-coeur": "workspace:0.0.0",
+    "@coeur/config": "workspace:*",
     "postcss": "8.4.29",
     "serve": "14.2.1",
-    "tailwind-config": "workspace:*",
     "typescript": "5.2.2",
     "vite": "4.4.9"
   }
