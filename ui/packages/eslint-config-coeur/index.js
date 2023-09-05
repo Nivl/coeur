@@ -21,17 +21,22 @@ module.exports = {
   },
   rules: {
     'simple-import-sort/imports': [
-      'warn',
+      'error',
       {
         groups: [['^\\u0000'], ['^@?\\w'], ['^'], ['^\\.', '^(@/)']],
       },
     ],
-    'simple-import-sort/exports': ['warn'],
+    'simple-import-sort/exports': ['error'],
     '@typescript-eslint/explicit-module-boundary-types': 0,
-    'prettier/prettier': 'warn',
-    'no-console': 'warn',
+    'prettier/prettier': ['error', {
+      singleQuote: true,
+      proseWrap: "always",
+      trailingComma: "all",
+      arrowParens: "avoid",
+    }],
+    'no-console': 'error',
     '@typescript-eslint/no-unused-vars': [
-      'warn',
+      'error',
       {
         argsIgnorePattern: '^_',
       },
