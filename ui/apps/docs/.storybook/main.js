@@ -2,7 +2,14 @@ const path = require("path");
 
 const config = {
   stories: ["../../../packages/coeur-core/src/**/*.stories.tsx", "../../../packages/coeur-core/src/**/*.stories.mdx"],
-  addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
+  addons: [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    {
+      name: '@storybook/addon-styling',
+      options: {},
+    }
+  ],
   framework: { name: '@storybook/react-vite' },
   core: {
     builder: "@storybook/builder-vite"
