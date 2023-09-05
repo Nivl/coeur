@@ -1,30 +1,30 @@
 const path = require("path");
 
-module.exports = {
-  stories: [
-    "../../../packages/coeur-core/src/**/*.stories.tsx",
-    "../../../packages/coeur-core/src/**/*.stories.mdx"
-  ],
+const config = {
+  stories: ["../../../packages/coeur-core/src/**/*.stories.tsx", "../../../packages/coeur-core/src/**/*.stories.mdx"],
   addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
-  framework: "@storybook/react",
+  framework: { name: '@storybook/react-vite' },
   core: {
-    builder: "@storybook/builder-vite",
+    builder: "@storybook/builder-vite"
   },
-  async viteFinal(config, { configType }) {
-    // customize the Vite config here
+  async viteFinal(config, {
+    configType
+  }) {
     return {
       ...config,
       resolve: {
-        alias: [
-          {
-            find: "@coeur/core",
-            replacement: path.resolve(
-              __dirname,
-              "../../../packages/coeur-core/"
-            ),
-          },
-        ],
+        alias: [{
+          find: "@coeur/core",
+          replacement: path.resolve(__dirname, "../../../packages/coeur-core/")
+        }]
       },
+      // https://github.com/storybookjs/storybook/issues/18920#issuecomment-1342865124
+      define: { 'process.env': {} }
     };
   },
+  docs: {
+    autodocs: true
+  }
 };
+
+export default config;
