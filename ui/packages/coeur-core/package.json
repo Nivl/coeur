@@ -27,5 +27,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "peerDependencies": {
+    "tailwindcss": "3.3.3"
   }
 }
