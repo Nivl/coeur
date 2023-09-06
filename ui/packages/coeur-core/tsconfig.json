@@ -1,5 +1,5 @@
 {
-  "extends": "@coeur/tsconfig/react-library.json",
+  "extends": "@coeur/config/tsconfig.library.json",
   "include": [
     "."
   ],
