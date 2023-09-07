@@ -1,0 +1,11 @@
+{
+  "extends": "@coeur/config/tsconfig.library.json",
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ]
+}

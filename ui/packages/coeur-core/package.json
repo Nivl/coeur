@@ -1,0 +1,35 @@
+{
+  "name": "@coeur/core",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "eslint --max-warnings 0 --ext .ts,.tsx src",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "test": "echo nothing to run"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.4",
+    "eslint": "8.48.0",
+    "@coeur/config": "workspace:*",
+    "@coeur/eslint-config": "workspace:*",
+    "react": "18.2.0",
+    "tsup": "5.10.1",
+    "typescript": "5.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "tailwindcss": "3.3.3"
+  }
+}
