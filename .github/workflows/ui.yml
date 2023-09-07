@@ -1,0 +1,60 @@
+name: Coeur UI
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'ui/**'
+      - '!ui/**/*.md'
+      - '.github/workflows/ui.yml'
+      - '.github/actions/node-setup/**'
+
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'ui/**'
+      - '!ui/**/*.md'
+      - '.github/workflows/ui.yml'
+      - '.github/actions/node-setup/**'
+
+defaults:
+  run:
+    working-directory: ./ui
+
+# Don't run more than one workflow for the same branch at a time
+# This is to save credits on the CI provider
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup
+        uses: './.github/actions/node-setup'
+      - name: Build
+        run: pnpm build
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup
+        uses: './.github/actions/node-setup'
+      - name: Test
+        run: pnpm test
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup
+        uses: './.github/actions/node-setup'
+      - name: Lint
+        run: pnpm lint
+

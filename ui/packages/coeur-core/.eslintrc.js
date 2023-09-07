@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ["coeur"],
+  extends: ["@coeur"],
   parserOptions: {
     project: "./tsconfig.json",
   },

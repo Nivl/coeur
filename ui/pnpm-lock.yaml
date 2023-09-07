@@ -100,6 +100,9 @@ importers:
       '@coeur/config':
         specifier: workspace:*
         version: link:../config
+      '@coeur/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
       '@types/react':
         specifier: 18.0.9
         version: 18.0.9
@@ -157,6 +160,42 @@ importers:
       tailwindcss:
         specifier: 3.3.3
         version: 3.3.3
+
+  packages/eslint-config:
+    dependencies:
+      '@types/eslint':
+        specifier: 8.44.2
+        version: 8.44.2
+      '@typescript-eslint/eslint-plugin':
+        specifier: 6.6.0
+        version: 6.6.0(@typescript-eslint/parser@6.6.0)(eslint@8.48.0)(typescript@5.2.2)
+      '@typescript-eslint/parser':
+        specifier: 6.6.0
+        version: 6.6.0(eslint@8.48.0)(typescript@5.2.2)
+      eslint:
+        specifier: 8.48.0
+        version: 8.48.0
+      eslint-config-prettier:
+        specifier: 9.0.0
+        version: 9.0.0(eslint@8.48.0)
+      eslint-plugin-import:
+        specifier: 2.28.1
+        version: 2.28.1(@typescript-eslint/parser@6.6.0)(eslint@8.48.0)
+      eslint-plugin-prettier:
+        specifier: 5.0.0
+        version: 5.0.0(@types/eslint@8.44.2)(eslint-config-prettier@9.0.0)(eslint@8.48.0)(prettier@3.0.3)
+      eslint-plugin-react:
+        specifier: 7.33.2
+        version: 7.33.2(eslint@8.48.0)
+      eslint-plugin-simple-import-sort:
+        specifier: 10.0.0
+        version: 10.0.0(eslint@8.48.0)
+      prettier:
+        specifier: 3.0.3
+        version: 3.0.3
+      prettier-plugin-tailwindcss:
+        specifier: 0.5.4
+        version: 0.5.4(prettier@3.0.3)
 
 packages:
 
@@ -4422,15 +4461,15 @@ packages:
   /@types/eslint@8.44.2:
     resolution: {integrity: sha512-sdPRb9K6iL5XZOmBubg8yiFp5yS/JdUDQsq5e6h95km91MCYMuvp7mh1fjPEYUhvHepKpZOjnEaMBR4PxjWDzg==}
     dependencies:
-      '@types/estree': 0.0.51
-      '@types/json-schema': 7.0.11
+      '@types/estree': 1.0.1
+      '@types/json-schema': 7.0.12
 
   /@types/estree@0.0.51:
     resolution: {integrity: sha512-CuPgU6f3eT/XgKKPqKd/gLZV1Xmvf1a2R5POBOGQa6uv82xpls89HU5zKeVoyR8XzHd1RGNOlQlvUe3CFkjWNQ==}
+    dev: true
 
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
-    dev: true
 
   /@types/express-serve-static-core@4.17.36:
     resolution: {integrity: sha512-zbivROJ0ZqLAtMzgzIUC4oNqDG9iF0lSsAqpOD9kbs5xcIM3dTiyuHvBc7R8MtWBp3AAWGaovJa+wzWPjLYW7Q==}
@@ -4493,9 +4532,6 @@ packages:
     dependencies:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
-
-  /@types/json-schema@7.0.11:
-    resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
 
   /@types/json-schema@7.0.12:
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
