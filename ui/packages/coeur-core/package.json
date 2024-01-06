@@ -17,8 +17,8 @@
     "test": "echo nothing to run"
   },
   "devDependencies": {
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
+    "@types/react": "18.2.47",
+    "@types/react-dom": "18.2.18",
     "eslint": "8.48.0",
     "@coeur/config": "workspace:*",
     "@coeur/eslint-config": "workspace:*",
