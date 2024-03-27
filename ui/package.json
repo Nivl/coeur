@@ -11,15 +11,15 @@
     "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
-    "@auto-it/conventional-commits": "11.0.2",
-    "@auto-it/npm": "11.0.2",
+    "@auto-it/conventional-commits": "11.1.2",
+    "@auto-it/npm": "11.1.2",
     "@coeur/config": "workspace:*",
-    "auto": "11.0.2",
-    "eslint": "8.48.0",
-    "prettier": "3.0.3",
-    "turbo": "1.10.13"
+    "auto": "11.1.2",
+    "eslint": "8.57.0",
+    "prettier": "3.2.5",
+    "turbo": "1.13.0"
   },
-  "packageManager": "pnpm@8.7.4",
+  "packageManager": "pnpm@8.15.5",
   "repository": "Nivl/coeur",
   "author": "Nivl <melvin.wont.reply@gmail.com>"
 }
