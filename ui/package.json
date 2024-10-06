@@ -15,7 +15,7 @@
     "@auto-it/npm": "11.0.2",
     "@coeur/config": "workspace:*",
     "auto": "11.0.2",
-    "eslint": "8.48.0",
+    "eslint": "8.57.1",
     "prettier": "3.0.3",
     "turbo": "1.10.13"
   },
