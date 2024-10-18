@@ -17,19 +17,19 @@
     "test": "echo nothing to run"
   },
   "devDependencies": {
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
+    "@types/react": "18.3.11",
+    "@types/react-dom": "18.3.1",
     "eslint": "8.48.0",
     "@coeur/config": "workspace:*",
     "@coeur/eslint-config": "workspace:*",
-    "react": "18.2.0",
+    "react": "18.3.1",
     "tsup": "7.2.0",
-    "typescript": "5.2.2"
+    "typescript": "5.6.3"
   },
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
-    "tailwindcss": "3.3.3"
+    "tailwindcss": "3.4.14"
   }
 }
