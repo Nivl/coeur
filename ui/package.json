@@ -17,9 +17,9 @@
     "auto": "11.0.2",
     "eslint": "8.48.0",
     "prettier": "3.0.3",
-    "turbo": "1.10.13"
+    "turbo": "2.2.3"
   },
-  "packageManager": "pnpm@8.7.4",
+  "packageManager": "pnpm@9.12.2",
   "repository": "Nivl/coeur",
   "author": "Nivl <melvin.wont.reply@gmail.com>"
 }
