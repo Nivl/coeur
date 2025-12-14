@@ -30,6 +30,6 @@
     "access": "public"
   },
   "peerDependencies": {
-    "tailwindcss": "3.3.3"
+    "tailwindcss": "4.1.18"
   }
 }
