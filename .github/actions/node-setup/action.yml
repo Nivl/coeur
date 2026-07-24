@@ -4,13 +4,13 @@ description: "Sets up the environment for jobs using node"
 runs:
   using: composite
   steps:
-    - uses: pnpm/action-setup@v2
+    - uses: pnpm/action-setup@v2.4.1
       with:
         package_json_file: "./ui/package.json"
         run_install: |
           - cwd: "ui"
 
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v3.9.1
       with:
         node-version-file: "./ui/.nvmrc"
         cache: "pnpm"
