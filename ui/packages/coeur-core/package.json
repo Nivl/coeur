@@ -17,12 +17,12 @@
     "test": "echo nothing to run"
   },
   "devDependencies": {
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
     "eslint": "8.48.0",
     "@coeur/config": "workspace:*",
     "@coeur/eslint-config": "workspace:*",
-    "react": "18.2.0",
+    "react": "19.2.8",
     "tsup": "7.2.0",
     "typescript": "5.2.2"
   },
